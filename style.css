@@ -1,0 +1,166 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --primary: #ff6f61;
+  --background: #fffdfd;
+  --text: #333;
+  --light-text: #777;
+  --border: #eee;
+  --accent: #fce9e7;
+  --radius: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--background);
+  color: var(--text);
+  line-height: 1.7;
+  padding: 20px;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+h2 {
+  color: var(--text);
+  margin: 2rem 0 1rem;
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 5px;
+}
+
+h3 {
+  margin: 1.5rem 0 0.5rem;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  border-radius: var(--radius);
+  margin-top: 1rem;
+}
+
+figure {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+figcaption {
+  font-style: italic;
+  color: var(--light-text);
+  margin-top: 0.5rem;
+}
+
+ul, ol {
+  margin-left: 1.5rem;
+  padding-left: 1rem;
+}
+
+fieldset {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--accent);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+legend {
+  font-weight: 600;
+  padding: 0 8px;
+}
+
+.form-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+}
+
+.form-option input {
+  margin: 0;
+}
+.form-option label {
+  margin: 0;
+  font-weight: 500;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+button {
+  background: var(--primary);
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+button:hover {
+  background: #e0594f;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: var(--light-text);
+  border-top: 1px solid var(--border);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  main {
+    padding: 20px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  button {
+    width: 100%;
+  }
+}
